@@ -35,8 +35,10 @@ public class CustomArrayList {
     }
 
     public int remove() {
-        int removed = data[--size];
-        return removed;
+        int removed = data[--size];  //This decreases the size variable by 1 before using it as an index.
+        return removed;              //So if size was 5, --size becomes 4, and data[4] is accessed.
+        
+         
     }
 
     public int get(int index) {
